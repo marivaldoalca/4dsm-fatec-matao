@@ -1,4 +1,7 @@
 import { Routes, Route } from "react-router";
+import CadastroAluno from "./pages/CadastroAluno";
+
+
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -16,6 +19,7 @@ function App() {
  <Route path="/alunos" element={<Alunos />} />
  <Route path="/cursos" element={<Cursos />} />
  <Route path="/sobre" element={<Sobre />} />
+ <Route path="/cadastro" element={<CadastroAluno />} />
  </Routes>
  <Footer />
  </>
