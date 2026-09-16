@@ -1521,3 +1521,431 @@ td {
     padding: 30px;
   }
 }
+.aluno-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.acoes {
+  display: flex;
+  gap: 8px;
+}
+
+.acoes button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ================================
+   PÁGINA DE ALUNOS
+================================ */
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.container h2 {
+  margin: 0 0 25px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* ================================
+   LISTA DE ALUNOS
+================================ */
+
+.lista-alunos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Cada aluno */
+
+.aluno-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  padding: 18px 20px;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.2s ease;
+}
+
+.aluno-item:hover {
+  border-color: #cbd5e1;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  transform: translateY(-1px);
+}
+
+/* ================================
+   DADOS DO ALUNO
+================================ */
+
+.dados-aluno {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  min-width: 0;
+}
+
+.dados-aluno strong {
+  font-size: 17px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.dados-aluno span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* ================================
+   BOTÕES
+================================ */
+
+.acoes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-left: 20px;
+}
+
+.acoes button {
+  border: none;
+
+  padding: 9px 16px;
+
+  border-radius: 7px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+/* Botão Editar */
+
+.acoes button:first-child {
+  background: #2563eb;
+  color: white;
+}
+
+.acoes button:first-child:hover {
+  background: #1d4ed8;
+}
+
+/* Botão Excluir */
+
+.acoes button:last-child {
+  background: #ef4444;
+  color: white;
+}
+
+.acoes button:last-child:hover {
+  background: #dc2626;
+}
+
+/* ================================
+   FORMULÁRIO DE EDIÇÃO
+================================ */
+
+.form-edicao {
+  background: #ffffff;
+
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+
+  padding: 25px;
+
+  margin-bottom: 25px;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.form-edicao h3 {
+  margin: 0 0 22px;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  color: #1f2937;
+}
+
+/* Campos */
+
+.campo {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 16px;
+}
+
+.campo label {
+  margin-bottom: 6px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #374151;
+}
+
+.campo input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 11px 13px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.campo input:focus {
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* ================================
+   BOTÕES DO FORMULÁRIO
+================================ */
+
+.acoes-form {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.acoes-form button {
+  padding: 10px 20px;
+
+  border: none;
+  border-radius: 7px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+/* Salvar */
+
+.acoes-form button[type="submit"] {
+  background: #16a34a;
+  color: white;
+}
+
+.acoes-form button[type="submit"]:hover {
+  background: #15803d;
+}
+
+/* Cancelar */
+
+.acoes-form button[type="button"] {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.acoes-form button[type="button"]:hover {
+  background: #d1d5db;
+}
+
+/* ================================
+   MENSAGEM DE ERRO
+================================ */
+
+.mensagem-erro {
+  background: #fef2f2;
+
+  color: #b91c1c;
+
+  border: 1px solid #fecaca;
+
+  border-radius: 8px;
+
+  padding: 12px 15px;
+
+  margin-bottom: 20px;
+
+  font-size: 14px;
+}
+
+/* ================================
+   RESPONSIVO
+================================ */
+
+@media (max-width: 700px) {
+
+  .container {
+    padding: 20px 15px;
+  }
+
+  .aluno-item {
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 15px;
+  }
+
+  .acoes {
+    margin-left: 0;
+  }
+
+  .acoes button {
+    flex: 1;
+  }
+
+  .form-edicao {
+    padding: 20px;
+  }
+
+  .acoes-form {
+    flex-direction: column;
+  }
+
+  .acoes-form button {
+    width: 100%;
+  }
+
+}
+
+/* ================================
+   CADASTRO DE ALUNO
+================================ */
+
+.container h2 {
+  color: #0b284c;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* Formulário */
+
+.container form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e3e8ee;
+}
+
+/* Cada campo */
+
+.container form > div {
+  margin-bottom: 22px;
+}
+
+/* Labels */
+
+.container form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #172033;
+  font-size: 15px;
+}
+
+/* Campos de texto */
+
+.container form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  border: 1px solid #cfd6df;
+  border-radius: 7px;
+  background: #f9fafb;
+  color: #172033;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+/* Campo ao receber foco */
+
+.container form input:focus {
+  border-color: #1688ed;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(22, 136, 237, 0.12);
+}
+
+/* Botão */
+
+.container form button {
+  width: 100%;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 7px;
+  background: #1688ed;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover */
+
+.container form button:hover {
+  background: #0b70c5;
+  transform: translateY(-1px);
+}
+
+/* Clique */
+
+.container form button:active {
+  transform: translateY(0);
+}
+
+/* Responsivo */
+
+@media (max-width: 600px) {
+
+  .container {
+    width: 92%;
+  }
+
+  .container h2 {
+    font-size: 24px;
+  }
+
+  .container form {
+    padding: 25px 20px;
+  }
+
+}
